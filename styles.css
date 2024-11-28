@@ -1,0 +1,12 @@
+.chat-message {
+  background: url(https://drive.google.com/file/d/1wpQHxcAb0tUomV1pNgf3MV4aeogfmS62/view?usp=drive_link) no-repeat center;
+  background-size: cover; /* Ajuste l'image pour couvrir la bulle */
+  border: 2px solid transparent; /* Supprime la bordure si nécessaire */
+  border-radius: 20px; /* Garde les coins arrondis */
+  padding: 20px 15px; /* Ajuste les marges internes */
+  color: #333; /* Couleur du texte */
+  font-size: 16px;
+  animation: slide-in 1s ease-out;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
