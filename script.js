@@ -1,7 +1,6 @@
 // ===== 1. Paramètres Twitch =====
-const twitchUsername = 'Claclou_che'; // Ton pseudo Twitch ici
-const oauthToken = 'oauth:xxxxxxxxxxxxxxxxxxxx'; // Ton jeton Twitch ici
-const channelName = '#Claclou'; // Le nom de ta chaîne avec un #
+const twitchUsername = 'Claclou_che'
+const channelName = '#Claclou'
 
 const chatContainer = document.getElementById('chat-container');
 
@@ -38,9 +37,3 @@ function addMessage(username, text) {
   messageDiv.classList.add('chat-message'); // Style défini dans styles.css
   messageDiv.innerHTML = `<strong>${username}:</strong> ${text}`;
   chatContainer.appendChild(messageDiv);
-
-  // Supprime les messages après 10 secondes
-  setTimeout(() => {
-    messageDiv.remove();
-  }, 10000);
-}
